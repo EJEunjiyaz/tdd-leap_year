@@ -1,7 +1,7 @@
 import unittest
 from leap_year import leap_year
 
-test_cases = []
+test_cases = [('1',False)]
 
 class LeapYearTestClass(unittest.TestCase):
      

@@ -1,3 +1,3 @@
 def leap_year(year):
     #TODO
-    return 0
+    return False
