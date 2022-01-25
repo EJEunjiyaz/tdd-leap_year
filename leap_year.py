@@ -1,3 +1,4 @@
 def leap_year(year):
-    #TODO
-    return False
+    if year/4 == 1:
+        return f'{year} is leap year.'
+    return f'{year} is not leap year.'
