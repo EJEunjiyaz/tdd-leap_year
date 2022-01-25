@@ -1,21 +1,10 @@
-import unittest
+import pytest
 from leap_year import leap_year
 
-test_cases = [
-    (1, "1 is not leap year."),
-    (2, "2 is not leap year."),
-    (3, "3 is not leap year."),
-    (4, "4 is leap year.")
-]
+from leap_year_unittest import test_cases
 
+class TestTennis:
 
-class LeapYearTestClass(unittest.TestCase):
-
-    def test_year(self):
-        for testcase in test_cases:
-            (year, result) = testcase
-            self.assertEqual(result, leap_year(year))
-
-
-if __name__ == "__main__":
-    unittest.main()
+    @pytest.mark.parametrize('year result'.split(), test_cases)
+    def test_year(self, year, result):
+        assert result == leap_year(year)
