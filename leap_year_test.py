@@ -11,7 +11,7 @@ test_cases = [
 
 class LeapYearTestClass(unittest.TestCase):
 
-    def test_Leap_Year(self):
+    def test_year(self):
         for testcase in test_cases:
             (year, result) = testcase
             self.assertEqual(result, leap_year(year))
