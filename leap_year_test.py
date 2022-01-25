@@ -3,6 +3,7 @@ from leap_year import leap_year
 
 from leap_year_unittest import test_cases
 
+
 class TestTennis:
 
     @pytest.mark.parametrize('year result'.split(), test_cases)
