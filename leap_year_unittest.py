@@ -25,8 +25,15 @@ test_cases = [
     (108, "108 is leap year."),
     (200, "200 is century year."),
     (300, "300 is century year."),
-    (400, "400 is century year."),
+    (400, "400 is century leap year."),
     (1000, "1000 is century year."),
+    (1001, "1001 is not leap year."),
+    (1002, "1002 is not leap year."),
+    (1003, "1003 is not leap year."),
+    (1004, "1004 is leap year."),
+    (2000, "2000 is century leap year."),
+    (3000, "3000 is century year."),
+    (4000, "4000 is century leap year."),
 ]
 
 
