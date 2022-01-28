@@ -2,6 +2,12 @@ import unittest
 from leap_year import leap_year
 
 test_cases = [
+    (-0.01, "-0.01 is invalid year value."),
+    (-1, "-1 is invalid year value."),
+    (-4, "-4 is invalid year value."),
+    (-100, "-100 is invalid year value."),
+    (0, "0 is invalid year value."),
+    (0.01, "0.01 is invalid year value."),
     (1, "1 is not leap year."),
     (2, "2 is not leap year."),
     (3, "3 is not leap year."),
@@ -34,6 +40,11 @@ test_cases = [
     (2000, "2000 is century leap year."),
     (3000, "3000 is century year."),
     (4000, "4000 is century leap year."),
+    ("Leap Year", "Leap Year is invalid year value."),
+    ("Hello", "Hello is invalid year value."),
+    ("4", "4 is invalid year value."),
+    ("2000", "2000 is invalid year value."),
+    ("-2000", "-2000 is invalid year value."),
 ]
 
 
